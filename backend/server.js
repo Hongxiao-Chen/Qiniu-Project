@@ -1,8 +1,6 @@
 import express from 'express';
 import cors from 'cors';
 import dotenv from 'dotenv';
-import { GoogleGenerativeAI } from '@google/generative-ai';
-import textToSpeech from '@google-cloud/text-to-speech';
 import { v4 as uuidv4 } from 'uuid';
 import fs from 'fs';
 import path from 'path';
