@@ -40,6 +40,11 @@ function ChatInterface({ character }) {
       setIsListening(true);
       setError('');
     }
+
+    if (audioRef.current) {
+      audioRef.current.pause();
+      audioRef.current.currentTime = 0;
+    }
   };
 
   useEffect(() => {
